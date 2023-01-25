@@ -1,8 +1,9 @@
-username = input('Username:')
+name = 'Graham Sprague'
 
-password = input('Password:')
+birth_year = input('In what year were you born?')
 
-pass_len = len(password)
-pass_shade = '*' * pass_len
+current_year = 2023
 
-print(f'{username}, your password {pass_shade} is {pass_len} characters long.')
+age = current_year - int(birth_year)
+
+print(f'Your age is {age}')
