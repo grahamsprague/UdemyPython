@@ -1,12 +1,6 @@
-#count the items in a list.
+#enumerator
 
 
-my_list = [1,2,3,4,5,6,7,8,9,10]
-
-counter = 0
-
-for item in my_list:
-  counter += item;
-
-
-print(str(counter) + ' is the sum of the items.')
+for i,char in enumerate(list(range(100))):
+  if char == 50:
+    print(str(char) + '\'s index is ' + str(i))
