@@ -1,10 +1,12 @@
-is_magician = True
-is_expert = False
+#count the items in a list.
 
 
-if (is_magician and is_expert):
-  print('You are a magician.')
-elif(is_magician and not(is_expert)):
-  print('At least you are getting there.')
-elif(not(is_magician)):
-  print('You need magic powers.')
+my_list = [1,2,3,4,5,6,7,8,9,10]
+
+counter = 0
+
+for item in my_list:
+  counter += item;
+
+
+print(str(counter) + ' is the sum of the items.')
