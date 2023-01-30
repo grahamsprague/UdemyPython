@@ -1,9 +1,15 @@
+# Scope - what variables do I have access to?
+def outer():
+    x = "local"
+    def inner():
+        nonlocal x
+        x = "nonlocal"
+        print("inner:", x)
+    inner()
+    print("outer:", x)
+outer()
 
-def highest_even(mylist):
-  mylist.sort()
-  mylist.reverse()
-  for item in mylist:
-    if item % 2 == 0:
-      return item
-      
-print(highest_even([10,1,2,3,4,11]))
+#1 - start with local
+#2 - Parent local?
+#3 - global
+#4 - built in python functions
