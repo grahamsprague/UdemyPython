@@ -1,52 +1,49 @@
-class Pets():
-    animals = []
-    def __init__(self, animals):
-        self.animals = animals
+#By reading the python documentation, add 3 more magic/dunder methods of your choice to this Toy class. 
+class Toy():
+  def __init__(self, color, age):
+    self.color = color
+    self.age = age
+    self.my_dict = {
+        'name':'Yoyo',
+        'has_pets': False,
+    }
 
-    def walk(self):
-        for animal in self.animals:
-            print(animal.walk())
+  def __str__(self):
+    return f"{self.color}"
 
+  def __len__(self):
+    return 5
 
+  def __del__(self):
+    return "deleted"
 
-class Cat():
-    is_lazy = True
+  def __call__(self):
+      return('yes??')
 
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
+  def __getitem__(self,i):
+      return self.my_dict[i]
 
-    def walk(self):
-        return f'{self.name} is just walking around'
+  def __delattr__(self,i):
+      return 'You cannot delete attributes. I simply will not allow it!'
 
-class Simon(Cat):
-    def sing(self, sounds):
-        return f'{sounds}'
+  def __sizeof__(self):
+      return 'She told me it was huge!'
 
-class Sally(Cat):
-    def sing(self, sounds):
-        return f'{sounds}'
-
-#1 Add nother Cat
-
-class Bonkers(Cat):
-  def string(self, sounds):
-      return f'{sounds}'
-      
-#2 Create a list of all of the pets (create 3 cat instances from the above)
-simon = Simon('Simon', 9)
-sally = Sally('Sally', 5)
-bonkers = Bonkers('Bonkers', 10)
-
-    
-my_cats = [simon, sally, bonkers]
-
-#3 Instantiate the Pet class with all your cats use variable my_pets
-
-my_pets = Pets(my_cats)
-  
-
-#4 Output all of the cats walking using the my_pets instance
+  def __format__(self):
+      return 'Overriding format dunder func.'
 
 
-print(my_pets.walk())
+action_figure = Toy('red', 0)
+print(action_figure.__str__())
+print(str(action_figure))
+print(len(action_figure))
+print(action_figure())
+print(action_figure['name'])
+
+print(action_figure.__delattr__('name'))
+
+print(action_figure.__sizeof__())
+
+print(action_figure.__format__())
+
+print(dir(action_figure))
