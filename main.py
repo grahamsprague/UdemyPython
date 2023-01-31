@@ -1,41 +1,52 @@
-#Given the below class:
-class Cat:
-    species = 'mammal'
+class Pets():
+    animals = []
+    def __init__(self, animals):
+        self.animals = animals
+
+    def walk(self):
+        for animal in self.animals:
+            print(animal.walk())
+
+
+
+class Cat():
+    is_lazy = True
+
     def __init__(self, name, age):
         self.name = name
-        self.age = int(age)
+        self.age = age
 
-    def findOldest(cats):
+    def walk(self):
+        return f'{self.name} is just walking around'
 
-      # init a storage for oldest cat
-      max_cat = None
-      for mycat in cats:
-        # on the first pass max_cat will be empty and error on age compare
-        if max_cat == None:
-          max_cat = mycat
-        # grabthe older and store it
-        if mycat.age > max_cat.age:
-          max_cat = mycat
+class Simon(Cat):
+    def sing(self, sounds):
+        return f'{sounds}'
+
+class Sally(Cat):
+    def sing(self, sounds):
+        return f'{sounds}'
+
+#1 Add nother Cat
+
+class Bonkers(Cat):
+  def string(self, sounds):
+      return f'{sounds}'
       
-      return max_cat
-      
-      
-        
+#2 Create a list of all of the pets (create 3 cat instances from the above)
+simon = Simon('Simon', 9)
+sally = Sally('Sally', 5)
+bonkers = Bonkers('Bonkers', 10)
 
-# 1 Instantiate the Cat object with 3 cats
+    
+my_cats = [simon, sally, bonkers]
 
-cat1 = Cat('Bonkers', 10)
-cat2 = Cat('Lucy', 25)
-cat3 = Cat('Scooter', 28)
+#3 Instantiate the Pet class with all your cats use variable my_pets
 
-print(cat1)
-print(cat2)
-print(cat3)
+my_pets = Pets(my_cats)
+  
 
-# 2 Create a function that finds the oldest cat
-cats = [cat1, cat2, cat3]
-old_cat = Cat.findOldest(cats)
+#4 Output all of the cats walking using the my_pets instance
 
-print('The oldest cat is ' + str(old_cat.age) + ' years old.')
 
-# 3 Print out: "The oldest cat is x years old.". x will be the oldest cat age by using the function in #2
+print(my_pets.walk())
