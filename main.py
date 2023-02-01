@@ -1,15 +1,20 @@
-some_list = ['a', 'b', 'c', 'b', 'd', 'm', 'n', 'n']
+# Create an @authenticated decorator that only allows the function to run is user1 has 'valid' set to True:
+user1 = {
+    'name': 'Sorna',
+    'valid': False #changing this will either run or not run the message_friends function.
+}
 
-# duplicates = []
-# for value in some_list:
-#     if some_list.count(value) > 1:
-#         if value not in duplicates:
-#             duplicates.append(value)
+def authenticated(fn):
+  def wrapper(*args, **kwards):
+      if args[0]['valid'] :
+        return fn(*args, **kwards)
+      else:
+        print('User not valid')
+  return wrapper
 
+  
+@authenticated
+def message_friends(user):
+    print('message has been sent')
 
-#generate a list of dupes, I used a set for the comp becasue it automatically dis-allows dupes. then I wrapped it in a set so it is fully compatible with the org example.
-duplicates = list({char for char in some_list if some_list.count(char) > 1})
-
-duplicates.sort()
-
-print(duplicates)
+message_friends(user1)
