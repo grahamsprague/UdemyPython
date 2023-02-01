@@ -1,19 +1,14 @@
+some_list = ['a', 'b', 'c', 'b', 'd', 'm', 'n', 'n']
+
+# duplicates = []
+# for value in some_list:
+#     if some_list.count(value) > 1:
+#         if value not in duplicates:
+#             duplicates.append(value)
 
 
-#Square
-
-mylist = [5,4,3]
-
-print(list(map((lambda item: item**2), mylist)))
+#generate a list of dupes, I used a set for the comp becasue it automatically dis-allows dupes. then I wrapped it in a set so it is fully compatible with the org example.
+duplicates = list({char for char in some_list if some_list.count(char) > 1})
 
 
-#list sorting by second item
-
-a = [(0,2),(4,3), (10,-1), (9,9)]
-
-print(a)
-
-#change the default key to the second index[1]
-a.sort(key=lambda x: x[1])
-
-print(a)
+print(duplicates)
