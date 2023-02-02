@@ -28,6 +28,7 @@ def print_primes(myiterable):
         
         if i % x == 0 and i != x: #skip 1 and the current 
           is_prime = False
+          break
 
       if is_prime:
         # print(i)
