@@ -1,4 +1,5 @@
 
+
 from time import time
 
 def performance(fn):
@@ -16,16 +17,16 @@ potential_primes = range(1,10000,2)
 def print_primes(myiterable):
   
   mycount = 0
-  # print(2)
+  # print(2) 2 is a prime but the only even prime
   mycount += 1
   
   for i in myiterable:
     is_prime = True
 
-    if i != 1:
-      for x in range(1,round((i)/2)):
+    if i != 1: # skipping 1 becuase we know its not a prime
+      for x in range(3,int((i)/2)+1):
         
-        if i % x == 0 and i != x and x != 1:
+        if i % x == 0 and i != x: #skip 1 and the current 
           is_prime = False
 
       if is_prime:
@@ -39,4 +40,5 @@ print_primes(potential_primes)
   
 
 
+  
   
