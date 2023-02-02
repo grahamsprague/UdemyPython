@@ -1,43 +1,42 @@
-def special_for(iterable):
-  iterator = iter(iterable)
-  while True:
-    try:
-      iterator*5
-      next(iterator)
-    except StopIteration:
-      break
 
+from time import time
 
-class MyGen:
-  counter = 0
-  current = 0
-  previous = 0
-
-  def __init__(self, first):
-    self.first = first
-
-
-  def __iter__(self):
-    return self
-
-  def __next__(self):
-
-    # make sure we are under the given value threshold
-    if MyGen.counter < self.first:
-
-      # need to kick start by setting to 1 on second pass.
-      if MyGen.counter > 0 and MyGen.current == 0:
-        MyGen.current += 1
-
-      # increment and calculate
-      MyGen.counter += 1
-      result = MyGen.previous + MyGen.current
-      MyGen.previous = MyGen.current
-      MyGen.current = result
-
+def performance(fn):
+  def wrapper(*args, **kwards):
+      t1 = time()
+      result = fn(*args, **kwards)
+      t2 = time()
+      print(f'took {t2 - t1} seconds.')
       return result
-    raise StopIteration
+  return wrapper
 
-gen = MyGen(20)
-for i in gen:
-    print(i)
+potential_primes = range(1,10000,2)
+
+@performance
+def print_primes(myiterable):
+  
+  mycount = 0
+  # print(2)
+  mycount += 1
+  
+  for i in myiterable:
+    is_prime = True
+
+    if i != 1:
+      for x in range(1,round((i)/2)):
+        
+        if i % x == 0 and i != x and x != 1:
+          is_prime = False
+
+      if is_prime:
+        # print(i)
+        mycount += 1
+      
+  print(f'prime count for {max(potential_primes)+ 1}: {str(mycount)}')
+
+print_primes(potential_primes)  
+
+  
+
+
+  
