@@ -1,5 +1,15 @@
 '''
 Guessing Game
+
+To run the script use python, the script name and then provide 2 paras
+python command: 'python'
+python file: 'guessing_game.py'
+param 1: start of number range '1'
+param 2: end of number range '10'
+
+example command
+python ./guessing_game.py 1 10
+
 '''
 
 import sys
