@@ -2,7 +2,8 @@
 Takes a list of return sep snumbers in a text file(argv1) 
 and downloads them to the output folder (argv2)
 
-called lie this...
+Called like this... dont put any slashes on the file or folder names.
+Run it from the directory the snumbers.txt file is in
 python3 image_downloader.py snumbers.txt outfolder
 '''
 
