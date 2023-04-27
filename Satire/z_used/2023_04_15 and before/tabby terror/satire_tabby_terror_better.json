@@ -1,0 +1,32 @@
+
+    {
+    "article": {
+        "short_name": "Midwestern Tabby Cat Terrorizes Town",
+        "titles": [
+            "Giant Tabby Cat Terrorizes Midwestern Town",
+            "Midwestern Town Terrorized by Giant Tabby Cat"
+        ],
+        "paragraphs": [
+            "A giant tabby cat has been terrorizing the Midwestern town of Springfield for the past week, causing widespread property damage but miraculously no casualties. The cat, which is believed to be about the size of a small car, has been seen prowling the streets at night, knocking over trash cans and tearing up people's gardens. Residents are living in fear, and the town has been flooded with calls to the police about the 'monster cat'.",
+            "Despite an intensive search by the police and animal control, the cat has so far eluded capture, and there is no word on when it might be caught. In the meantime, the townspeople are being advised to stay indoors at night and keep their doors and windows firmly locked."
+        ]
+    },
+    "comments": [
+        {
+            "username": "jane Doe",
+            "comment": "This is the most ridiculous thing I've ever heard. A giant tabby cat? Please."
+        },
+        {
+            "username": "John Smith",
+            "comment": "I'm not sure what's more terrifying, the fact that there's a giant cat on the loose, or the fact that the police don't seem to be able to do anything about it."
+        },
+        {
+            "username": "catlover123",
+            "comment": "I love cats, but this is just getting out of hand. Someone needs to catch that thing before it does any more damage."
+        },
+        {
+            "username": "Springfield Resident",
+            "comment": "I've seen the cat, and it's definitely not friendly. It hisses and growls whenever anyone comes near it. It's like it's possessed or something."
+        }
+    ]
+}

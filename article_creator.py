@@ -16,7 +16,7 @@ model_engine = "text-davinci-003"
 
 
 ideas = [
-    ''
+    'Conglomaco infinite cat theorem experiment. If we give lots of cats, lots of time with a musical keyboard, eventually they will prodouce Beethovens 5th.',
 
     
 ]

@@ -1,0 +1,35 @@
+
+    {
+        "article": {
+            "short_name": "Inner City Youth In-Reach Program",
+            "titles": [
+                "Inner City Youth In-Reach Program encourages mischevious behavior",
+                "All kids do is play video games these days",
+                "They arent going out and getting into troube like they used to",
+                "This program aims to get them off their suburban couches and into some inner city trouble"
+            ],
+            "paragraphs": [
+                "The Inner City Youth In-Reach Program is a new initiative aimed at getting kids off their suburban couches and into some inner city trouble. The program, which is being piloted in the city of Los Angeles, encourages mischevious behavior among its participants. All kids do is play video games these days, and they're not getting into trouble like they used to, so this program aims to get them back on track.",
+                "The program is modeled after similar programs in other cities, such as New York and Chicago, which have seen success in getting kids off the streets and into positive activities. The Los Angeles program will offer a variety of activities for its participants, including graffiti art, parkour, and breaking into abandoned buildings. The program will also provide participants with a stipend to cover the cost of their activities.",
+                "The program is controversial, and has already drawn criticism from some who feel that it is encouraging criminal behavior. However, those involved with the program believe that it will provide a much-needed outlet for kids who are otherwise bored and unengaged with their lives. Only time will tell whether the program is successful, but it is sure to be a topic of debate for some time to come."
+            ]
+        },
+        "comments": [
+            {
+                "username": "JohnDoe",
+                "comment": "This is a great program! We need more programs like this to keep kids off the streets."
+            },
+            {
+                "username": "JaneDoe",
+                "comment": "I'm not sure this is a good idea. I don't think we should be encouraging kids to break the law."
+            },
+            {
+                "username": "Jimbob",
+                "comment": "This is stupid. Why would anyone want to do this?"
+            },
+            {
+                "username": "Anonymous",
+                "comment": "I think this program is a great idea. It will give kids something to do and keep them out of trouble."
+            }
+        ]
+    }
