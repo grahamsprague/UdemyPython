@@ -1,0 +1,44 @@
+
+    { 
+        "article": {
+            "title": "Where the Hell is My Flying Car?",
+            "article_id": 0,
+            "author_id": 38,
+            "category_id": 0,
+            "publish_date": "2023-XX-XX",
+            "short_name": "future_car",
+            "titles": [
+                "The Future is Here, Where is My Flying Car?", 
+                "Where is the Flying Car we were Promised?", 
+                "Where's the Flying Car I was Supposed to be Driving?"
+            ],
+            "paragraphs": [
+                "The future is here, and with it we were promised a flying car. We were promised something that would revolutionize transportation, that would take us to new heights, that would make life easier and more efficient. But where is it?",
+                "There have been some attempts at creating a viable flying car, but they have all been severely limited in scope. The closest thing we have so far is the Terrafugia Transition, a two-seater roadable aircraft. But it is far from the flying car of our dreams.",
+                "The dream of the flying car has been around since the early 20th century, and yet here we are, still waiting. So why has this revolutionary technology failed to materialize? There are a few possible reasons.",
+                "One reason could be the cost. Developing a reliable flying car would be an expensive undertaking, and there would be a lot of regulatory hurdles to overcome in order to make it available to the public. Additionally, the infrastructure and maintenance costs of a fleet of flying cars would be significant.",
+                "Another possible reason is the safety factor. Flying cars would need to be incredibly safe, as any mistake could have catastrophic consequences. There have been some incidents involving unmanned aerial vehicles, which have made people wary of the idea of flying cars.",
+                "Another possible reason is the lack of public interest. Flying cars may be seen as too futuristic or too risky by some, and the potential market may not be large enough to justify the cost of development.",
+                "Despite these obstacles, there is still hope for the flying car. There are companies working on the technology, and progress is being made. In the future, we may see the flying car become a reality.",
+                "In the meantime, we can only wait and hope that the flying car of our dreams will one day materialize and revolutionize transportation as we know it."
+            ]
+        },
+        "comments": [
+            {
+                "username":"Dreamer101",
+                "comment": "I can't wait for the day when I'm able to fly around in my own personal car!"
+            },
+            {
+                "username":"Skeptic77",
+                "comment": "I don't think this is ever going to happen. It's too expensive and too dangerous."
+            },
+            {
+                "username":"TechWiz",
+                "comment": "I'm sure someone will figure it out eventually. They just need to make sure it's safe and efficient."
+            },
+            {
+                "username":"Realist42",
+                "comment": "It will never happen. Too many obstacles to overcome."
+            }
+        ]
+    }

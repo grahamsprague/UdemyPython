@@ -33,13 +33,11 @@ for snumber in lines:
 
     snumber_clean = snumber.strip()
 
-    my_url = 'https://www.staples-3p.com/s7/is/image/Staples/' \
-             + snumber_clean + \
-             '?wid=2000&hei=2000'
+    my_url = snumber_clean
 
     try:
-        img_data = requests.get(my_url, timeout=REQUEST_TIMEOUT).content
-        with open('./' + OUT_FOLDER + '/' + snumber_clean + '.jpg', 'wb') as handler:
+        img_data = requests.get('https://thePasquino.com/ui/images/' + my_url, timeout=REQUEST_TIMEOUT).content
+        with open('./' + OUT_FOLDER + '/' + snumber_clean, 'wb') as handler:
             handler.write(img_data)
     except Exception as e:
         print('Error downloading:' + snumber_clean + ' Error: ' + e )
